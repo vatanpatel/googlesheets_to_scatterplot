@@ -1,10 +1,9 @@
 from setuptools import setup, find_packages
 
 # read the contents of your README file
-from os import path
-this_directory = path.abspath(path.dirname(__file__))
-with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
-    long_description = f.read()
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 classifiers = [
     'Intended Audience :: Education',
@@ -15,9 +14,9 @@ classifiers = [
 
 setup(
     name='googlesheets_to_scatterplot',
-    version='0.0.1',
+    version='0.0.4',
     description='We can create plots directly from Google Sheets',
-    long_description= long_description + '\n\n' + open('CHANGELOG.txt').read(),
+    long_description= '', #long_description + '\n\n' + open('CHANGELOG.txt').read(),
     url='https://github.com/vatanpatel/googlesheets_to_scatterplot',
     author='Vatan Patel',
     author_email='i12vatanp@iimidr.ac.in',
@@ -25,5 +24,6 @@ setup(
     classifiers=classifiers,
     keywords='googlesheets',
     packages=find_packages(),
-    install_requires=['pandas', 'matplotlib', 'seaborn', 'gspread', 'oauth2client']
+    install_requires=['markdown','pandas', 'matplotlib', 'seaborn', 'gspread', 'oauth2client']
 )
+
