@@ -1,7 +1,10 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+# read the contents of your README file
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 classifiers = [
     'Intended Audience :: Education',
@@ -11,16 +14,16 @@ classifiers = [
 ]
 
 setup(
-    name='vatanbasiccalculator',
+    name='googlesheets_to_scatterplot',
     version='0.0.1',
-    description='A very basic calculator',
-    long_description=long_description + open('CHANGELOG.txt').read(),
-    url='',
+    description='We can create plots directly from Google Sheets',
+    long_description= long_description + '\n\n' + open('CHANGELOG.txt').read(),
+    url='https://github.com/vatanpatel/googlesheets_to_scatterplot',
     author='Vatan Patel',
     author_email='i12vatanp@iimidr.ac.in',
     license='MIT',
     classifiers=classifiers,
-    keywords='gsheets',
+    keywords='googlesheets',
     packages=find_packages(),
-    install_requires=['pandas', 'matplotlib.pyplot', 'seaborn', 'gspread', 'oauth2client']
+    install_requires=['pandas', 'matplotlib', 'seaborn', 'gspread', 'oauth2client']
 )
