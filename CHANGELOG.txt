@@ -15,4 +15,22 @@ Changelog
 
 0.0.4 (08/10/2020)
 ----------------
-- Third Release
+- Fourth Release
+
+0.0.5 (08/10/2020)
+----------------
+- Fifth Release
+       - We remove the need for providing the client name
+       - Default sheet number is takes as 1
+       - We updated the README file.
+
+0.0.6 (08/10/2020)
+----------------
+- Sixth Release
+       - We add proper comments to our library for people to refer later
+       - Made changes to the title
+
+0.0.7 (09/10/2020)
+----------------
+- Seventh Release
+       - We removed changelog from long_description
