@@ -1,4 +1,4 @@
-googlesheets_to_scatterplot is a Python module for creating plots directly from spreadsheet.
+googlesheets_to_scatterplot is a Python library for creating plots directly from spreadsheet.
 
 The project was started in 2020 by Vatan Patel as a pre-process task for Greendeck.
 
